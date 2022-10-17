@@ -35,7 +35,7 @@ public class ArrayTests {
   //New Test Cases with Bugs
   @Test
   public void testAverageWithoutLowest(){
-    double[] input1 = {1.0, 5.0, 3,0, 10.0};
-    assertEquals(6.0, ArrayExamples.averageWithoutLowest(input1), 0.0001);
+    double[] input1 = {2.0, 2.0, 3.0, 4.0, 5.0};
+    assertEquals(3.5, ArrayExamples.averageWithoutLowest(input1), 0.0001);
   }
 }
