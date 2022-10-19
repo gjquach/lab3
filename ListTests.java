@@ -7,9 +7,9 @@ import java.util.List;
 public class ListTests {
 	@Test 
 	public void testFilter() {
-        List<String> input1 = new ArrayList<>(Arrays.asList("march", "parch"));
-        //StringChecker checker = new chChecker();
-        //assertEquals(new ArrayList<>(Arrays.asList("march", "parch")), ListExamples.filter(input1, checker));
+        List<String> input1 = new ArrayList<>(Arrays.asList("march", "parch", "startch", "book", "Arches"));
+        StringChecker sc = new hasArch();
+        assertEquals(new ArrayList<>(Arrays.asList("march", "parch", "Arches")), ListExamples.filter(input1, sc));
 	}
 
     @Test
